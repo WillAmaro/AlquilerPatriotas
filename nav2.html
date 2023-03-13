@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body >
+
+    <!-- Aqui estamos creando el header dentro del body -->
+    <header >
+
+
+    <!--- La etiqueta nav engloba a el logotipo , listado de navegador e imagen del boton en modo responsivo "-->        
+        <nav class="navbar">
+
+            <!-- Aqui estamos creando el logotipo -->
+
+
+            <a href="" class="logo">
+                Taller Informatico
+            </a>
+
+            <!-- Aqui estamos creando el listado del navegador empezando por el ul > li > a -->
+            <div class="nav-links">
+               <ul>
+                <li class="active"><a>Home</a></li>
+                <li><a>Contact</a></li>
+                <li><a>Services</a></li>
+                <li><a>Social</a></li>
+                <li><a>Info</a></li>
+               </ul>           
+            </div>
+
+            <!--    -->
+            <img src="menu-btn.png" alt="menu hambuger" class="menu-hamburger">
+        </nav>
+
+
+    </header>
+
+
+
+    <main class="body">
+        <!-- Aquí iría el contenido principal de tu página -->
+    </main>
+
+
+    <script>
+  
+        //Creamos una constante llamda  "menuHamburger" que representa al icono de la hamburguesa ( icono menu )
+
+        const menuHamburger = document.querySelector(".menu-hamburger")
+
+        // Alamacenar en la variable navLinks a el elemento html que tenga la clase "nav-links"
+
+        //HOME - CONTACT SERVICES SOCIAL INFO 
+
+        const navLinks = document.querySelector(".nav-links")
+
+        //Almacenar en la variablo logo a el elemento html que tenga la clase "logo"
+
+        const logo = document.querySelector(".logo")
+
+
+       
+ 
+        menuHamburger.addEventListener('click',()=>{
+
+            //CODIGO PARA CUMPLIR LA FUNCION 
+
+         navLinks.classList.toggle('mobile-menu')
+         logo.classList.toggle('shift-right')
+    
+        })
+
+    </script>
+
+</body>
+</html>
