@@ -36,11 +36,6 @@ html{
 #imagenInterior{
     object-fit: contain !important;
 }
-.tit2,.tit3{
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-}
 
 .titulo h1{
     display: flex;
@@ -148,6 +143,7 @@ header{
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: antiquewhite;
   margin: auto;
   height: 100%;
 }
@@ -155,7 +151,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
-    
+    background-color: antiquewhite;
     margin: auto;
     height: 500px;
   }
