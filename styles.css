@@ -129,7 +129,7 @@ header{
 #slider {
     width: 90%;
     margin: auto;
-    height: 500px;
+    height: 400px;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -154,6 +154,7 @@ header{
     background-color: antiquewhite;
     margin: auto;
     height: 500px;
+    object-fit: contain;
   }
   
   
@@ -171,7 +172,7 @@ main{
     display: flex;
 
     margin: auto;
-    height: 700px;
+    height: 500px;
   }
 
   #img_inte{
@@ -254,7 +255,7 @@ main{
 #slide{
   width: 100%;
 
-  height:700px;
+  height:500px;
   display: flex;
   position: relative;
   overflow: hidden;
