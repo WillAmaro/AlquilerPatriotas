@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <!-- Aqui estamos creando el header dentro del body -->
+    <header>
+      <!--- La etiqueta nav engloba a el logotipo , listado de navegador e imagen del boton en modo responsivo "-->
+      <nav class="navbar">
+        <!-- Aqui estamos creando el logotipo -->
+
+        <a href="" class="logo"> Alquiler San Miguel </a>
+
+        <!-- Aqui estamos creando el listado del navegador empezando por el ul > li > a -->
+        <div class="nav-links menu">
+          <ul >
+            <li class="active" ><a href="#home"> Home</a></li>
+            <li><a href="#interiores">Interiores</a></li>
+         
+            <li><a href="#galeria">Fotos</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+        
+            <li><a href="#contacto">Contactanos</a></li>
+          </ul>
+        </div>
+
+        <!--    -->
+        <img src="btn.png" alt="menu hambuger" class="menu-hamburger" />
+      </nav>
+    </header>
+
+    <main>
+      <!-- Aquí iría el contenido principal de tu página -->
+
+      <div class="info" id="home">
+        <div id="slide">
+          <div id="img_inter">
+            <img src="images/Sin título (2).png" id="imagenSlider" class="active" />
+          </div>
+        </div>
+
+        <div class="info_text">
+          Si estás considerando <span>mudarte</span>, es posible que estés
+          buscando en varios sitios web para encontrar
+          <span>las mejores tarifas y el tipo de vivienda adecuado</span> .
+          Descubre por qué vivir en San Miguel es una idea excelente y esta es
+          tu mejor opción. ¡No te arrepentirás! <br />
+          <br />Espectacular departamento de 90 mt2 con cochera en alquiler
+          ubicado en la Av. Los Patriotas cuadra 03 - Urb. Maranga.
+        </div>
+      </div>
+
+      <div id="interiores" class="titulo">
+        <h1>Interiores</h1>
+      </div>
+
+      <div class="info">
+        <div class="info_text">
+          El encanto del departamento se concentra en el balcón del quinto piso,
+          que brinda una vista impresionante y una cálida luz natural que realza
+          la sala. Además, es un espacio ideal para relajarse y disfrutar de la
+          brisa fresca mientras se admira el paisaje urbano. Este toque único
+          agrega gran valor al departamento.
+        </div>
+
+        <div id="slid">
+          <div id="img_inte">
+            <img src="images/balcon.jpg" id="imagenInterior" />
+          </div>
+        </div>
+      </div>
+
+      <h1 class="tit">Dormitorio Principal</h1>
+
+      <div class="info">
+
+        <div id="slid">
+          <div id="img_inte">
+            <img
+              src="images/hab.jpg
+            "
+              id="imagenInterior"
+            />
+          </div>
+        </div>
+
+        <div class="info_text">
+          El amplio dormitorio principal es una de las características
+          destacables de este departamento. Ofrece una vista privilegiada,
+          creando una sensación de amplitud y luminosidad, convirtiéndolo en el
+          lugar perfecto para descansar y relajarse. Este dormitorio es un
+          verdadero oasis en el hogar, ideal para aquellos que buscan una
+          experiencia única y reconfortante al momento de descansar.
+        </div>
+      </div>
+      <h1 class="tit2">Dormitorio Secundario </h1>
+      <div class="info">
+        <div class="info_text">
+          El dormitorio secundario con amplio closet y acabados de alta calidad,
+          ofrece una experiencia de descanso cómoda y práctica. Su tamaño
+          aceptable lo hace perfecto para alojar a familiares o amigos de manera
+          acogedora. En definitiva, es un espacio bien diseñado y funcional.
+        </div>
+        <div id="slid">
+          <div id="img_inte">
+            <img
+              src="images/hab2.jpg
+            "
+              id="imagenInterior"
+            />
+          </div>
+        </div>
+      </div>
+      <h1 class="tit3">Dormitorio Secundario </h1>
+      <div class="info">
+        <div id="slid">
+          <div id="images/img_inte">
+            <img
+              src="images/hab3.jpg
+            "
+              id="imagenInterior"
+            />
+          </div>
+        </div>
+        <div class="info_text">
+          La habitación 3, aunque pequeña, es funcional y acogedora, con espacio
+          suficiente para una cama individual y otros muebles. Perfecta para
+          aquellos que buscan una opción práctica y funcional.
+        </div>
+      </div>
+
+      <h1 class="tit2">Pasadiso</h1>
+
+
+      <div class="info">
+        <div class="info_text">
+          El pasadizo es amplio y luminoso, conectando cómodamente el dormitorio
+          principal con las otras habitaciones del departamento, facilitando el
+          acceso a cada una de las áreas.
+        </div>
+
+        <div id="slid">
+          <div id="img_inte">
+            <img
+              src="images/10.jpg
+            "
+              id="imagenInterior"
+            />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="full-img" id="fulImgBox"><img src="balcon.jpg" id="fulImg" alt="">
+      <span  onclick="closeImg()">X</span></div>
+
+
+      <div id="galeria" class="titulo">
+        <h1>Galeria de Imagenes</h1>
+      </div>
+
+      <div class="img-gallery">
+        <img src="images/balcon.jpg" alt="" onclick="openFulImg(this.src)"/>
+        <img src="images/1.jpg" alt=""onclick="openFulImg(this.src)" />
+        <img src="images/2.jpg" alt="" onclick="openFulImg(this.src)"/>
+        <img
+          src="images/3.jpg"
+          alt=""
+
+          onclick="openFulImg(this.src)"
+        ><img src="images/4.jpg" alt=""
+        onclick="openFulImg(this.src)" />
+        <img src="images/5.jpg" alt=""
+        onclick="openFulImg(this.src)" />
+        <img src="images/6.jpg" alt=""
+        onclick="openFulImg(this.src)" />
+        <img
+          src="images/7.jpg"
+          alt=""
+          onclick="openFulImg(this.src)"
+        />
+        <img src="images/8.jpg" alt=""
+        onclick="openFulImg(this.src)" />
+        <img src="images/9.jpg" alt="" 
+        onclick="openFulImg(this.src)"/>
+        <img src="images/10.jpg" alt="" 
+        onclick="openFulImg(this.src)"/>
+        <img src="images/11.jpg" alt="" 
+        onclick="openFulImg(this.src)"/>
+        <img src="images/12.jpg" alt="" 
+        onclick="openFulImg(this.src)"/>
+        <img src="images/13.jpg" alt="" 
+        onclick="openFulImg(this.src)"/>
+      </div>
+
+
+      <div id="beneficios"class="titulo">
+        <h1>Beneficios San Miguel</h1>
+      </div>
+
+      <div id="slider">
+        <div id="img_interna">
+          <img src="images/por-que-vivir-en-san-miguel.jpg" class="active" />
+
+          <img src="images/centros-comerciales.jpg" />
+
+          <img src="images/malecon-moderno.jpg" />
+
+          <button class="prev" onclick="anteriorImagen()">Anterior</button>
+
+          <button class="next" id="demo" onclick="siguienteImagen()">
+            Siguiente
+          </button>
+        </div>
+      </div>
+
+      <div class="parrafo">
+        <h1>Por qué vivir en San Miguel? 
+        </h1>
+        <p>Si están pensando en mudarte es seguro que estás buscando en diferentes sitios web los mejores precios y el tipo de departamento, pero ¿has investigado cuáles son los mejores distritos para vivir según tus necesidades y factores como la seguridad, recreación, etc.? Si tu respuesta es “no” en este artículo te presentamos el distrito de San Miguel. Descubre por qué vivir en San Miguel es una excelente idea ¡No te arrepentirás!</p>
+
+        <h1>Cercanía al mar
+        </h1>   
+      <p>
+        Uno de los principales atractivos de vivir en San Miguel es que se encuentra cerca al mar. San Miguel comprende, en su territorio a gran parte del circuito de playa lo que permitirá que no solo tengas los balnearios cerca, sino también que estés a un paso de las convenciones y diferentes actividades que el municipio acostumbra realizar en esta zona y es que en ella se encuentra la importante Ciudad Ferial.
+
+
+      </p>   
+    <h1>Un moderno malecón
+    </h1>
+    <p>Vivir en San Miguel te permitirá disfrutar a menudo de los encantos del distrito, como su malecón. Este se volverá el paso peatonal perfecto para pasear, contemplar el mar o practicar deportes como correr.
+
+    </p>
+    <h1>Adiós problemas de tránsito
+    </h1>
+    <p>Un beneficio de vivir en San Miguel es que se encuentra muy bien conectado. San Miguel cuenta con vías rápidas que hacen más fácil que llegues de un punto a otro de la ciudad. La costanera será el sendero que preferirás para llegar al distrito financiero, al tradicional distrito de Barranco o al cosmopolita distrito de Miraflores. También puedes comunicarte fácilmente con el Centro de Lima gracias al sistema integral de transporte.
+
+    </p>
+    </div>
+    </main>
+    <footer>
+      <div class="footer" id="contacto">
+
+        <div class="interior">
+          <h1>Contactanos via facebook</h1>
+          <a href="https://www.facebook.com/marketplace/item/1258813228006923">
+          <img src="images/fb.svg" alt="">
+        </a></div>
+        <div class="interior"><h1>Contactanos via WhatsApp</h1>  <a href="https://wa.link/rbj5cu"> <img src="images/whats.svg" alt=""></a> </div>
+      </div>
+    </footer>
+
+    <script>
+      //Creamos una constante llamda  "menuHamburger" que representa al icono de menu ( class="menu-hamburger" )
+
+      const menuHamburger = document.querySelector(".menu-hamburger");
+
+      // Alamacenar en la variable navLinks a el elemento html que tenga la clase "nav-links"
+
+      //HOME - CONTACT SERVICES SOCIAL INFO
+
+      const navLinks = document.querySelector(".nav-links");
+
+      //Almacenar en la variablo logo a el elemento html que tenga la clase "logo"
+
+      const logo = document.querySelector(".logo");
+
+      //Creamos el evento utilizando "addEventListener"
+
+      //La funcion se activara al momento de dar "click" en el icono del menu
+
+      menuHamburger.addEventListener("click", () => {
+        //CODIGO PARA CUMPLIR LA FUNCION
+
+        //La funcion togle se encarga de agregar o remover clases a un elemento html
+        // Agregará o removera dependiendo de como se encuentre al momento de dar "click"
+        //En caso la clase al momento de dar click este activa la removera, en caso este desactivada la agregará
+        // Las clase "mobile-menu" solo contienen propiedades css que indicarán en que distancia, espacio y tiempo se desplazaran los elementos.
+        navLinks.classList.toggle("mobile-menu");
+        
+        logo.classList.toggle("shift-right");
+      });
+      const menu = document.querySelector(".menu")
+
+
+      const menuLink = document.querySelectorAll('.menu a[href^="#"]');
+
+      menuLink.forEach(menulink => {
+        menulink.addEventListener("click",function(){
+        menu.classList.remove("mobile-menu")
+      })
+    
+    })
+
+      // function nombreDeFuncion () {
+
+      // FUNCION A CREAR
+
+      // }
+      // demo.onclick = function(){
+      //  imagenDeSlider[index].classList.remove("active");
+      //  index = (index + 1) % imagenDeSlider.length;
+      // imagenDeSlider[index].classList.add("active");
+
+      //};
+
+        const imagenDeSlider = document.querySelectorAll("#slider img");
+        let index = 0;
+
+        function siguienteImagen() {
+          // posicion index = 0
+          // posicionIndex0.obtengaClase.remueva("active")
+
+          //estilo css
+
+          // slider img {
+          //opacity : 0;
+          //}
+
+          // slider img.active{
+
+          // opacity : 1;
+          // }
+
+          //<img src="https://picsum.photos/id/1000/1920/1080" class="active">
+
+          // let index = 0
+
+          // imagen de la cruz
+          // index = 0
+
+          //
+
+          imagenDeSlider[index].classList.remove("active");
+          // index en el que estamos = 0
+          index = (index + 1) % imagenDeSlider.length;
+          //(0+1)%3  = 1%3 = 1
+
+          //     index = 1
+
+          // ya tengo cogida la siguiente imagen ( index 1 ) posicon 2
+          //ya tengo la imagen del papa.clasee("activa")
+
+          //siguiente linea de codigo
+
+          //agarrar la imagen seleccionada
+          //imagenDeSlider[index] = imagneDeSlider[1] = foto del papa con su hijo
+          //.add agrega ( agrega la clase "activa")
+
+          //opacidad = 1
+
+          //se va a mostrar la imagen
+
+          imagenDeSlider[index].classList.add("active");
+        }
+
+        function anteriorImagen() {
+          //
+          //imagen primera primera imagen
+          //index 0
+          //remueve la clase "activa"
+
+          imagenDeSlider[index].classList.remove("active");
+
+          //despues de realizar esta operacion si estamos en la posicion index 0 osea la primera
+          //imagen
+          //index = (0-1+3) % 3 = 2%3 = 2
+          index = (index - 1 + imagenDeSlider.length) % imagenDeSlider.length;
+          //resultado de index = 2
+
+          //1era imagen index 0
+          //2da img index 1
+          //3era img index 2
+          // estando en la ultima imagen
+          imagenDeSlider[index].classList.add("active");
+
+          // imagenDeSlider[2] = 3era imagen = 3eraImagen.Clase.Agregar("active")
+      }
+
+      setInterval(siguienteImagen, 5000); 
+
+
+      const fulImgBox = document.getElementById("fulImgBox");
+      const fulImg = document.getElementById("fulImg");
+
+      function closeImg(){
+
+        fulImgBox.style.display = "none";
+      }
+
+
+      function openFulImg(reference){
+
+        fulImgBox.style.display = "flex";
+        fulImg.src = reference;
+      }
+
+
+    </script>
+  </body>
+</html>
