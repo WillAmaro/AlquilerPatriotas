@@ -26,7 +26,6 @@ menuHamburger.addEventListener("click", () => {
   // Las clase "mobile-menu" solo contienen propiedades css que indicarán en que distancia, espacio y tiempo se desplazaran los elementos.
   navLinks.classList.toggle("mobile-menu");
   
-  logo.classList.toggle("shift-right");
 });
 const menu = document.querySelector(".menu")
 
