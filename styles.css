@@ -64,6 +64,7 @@ header{
 }
 
 
+
 a{
     text-decoration: none;
     color: black;
@@ -174,7 +175,16 @@ main{
     margin: auto;
     height: 500px;
   }
+  .navbar a{
+    display: block;
+    text-decoration: none;
+    color:black;
+}
 
+a{
+    text-decoration: none;
+    color: black:;
+}
   #img_inte{
     width: 100%;
     display: flex;
